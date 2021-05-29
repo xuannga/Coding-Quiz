@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+
+    <title>Medical Quiz</title>
+</head>
+<body>
+    <header>
+        <!-- This div holds the "highscore" link and the "timeLeft" which starts at 100 sec -->
+        <div class="score">
+            <a class="highscoreLink">Highscores</a>
+        </div>
+        <div id="timeLeft">Time:100</div>
+    </header>
+
+    <!-- This section has the instructions for the quiz and the start btn which will start the quiz -->
+    <section id="beginBox" class="beginBox">
+        <h1>Medical Terms Quiz</h1>
+        <p>Answer all the questions before the time runs out. Incorrect answers will deduct 10 seconds. You have 100 seconds, your final score will be whats left of the time. Good Luck!</p>
+        <div class="control">
+            <!-- the start button -->
+            <button id="startBtn" clas="startBtn">Start</button>
+        </div>
+    </section>
+
+    <!-- this section is the quiz itself, it will display the questions and choices -->
+    <section id="quizBox" class="hide">
+        <h1 id="questions">questions</h1>
+        <div id="answerBtn">
+            <button class="btn">answer 1</button>
+            <button class="btn">answer 2</button>
+            <button class="btn">answer 3</button>
+            <button class="btn">answer 4</button>
+        </div>
+        <!-- displays whether the answer is correct or wrong -->
+        <h2 id="validAnswer" class="true-false hide"></h2>
+        <div class="control">
+            <!-- next question button -->
+            <button id="nextBtn" class="hide">Next</button>
+        </div>
+    </section>
+    
+    <!-- This section will save the quiz taker's initials -->
+    <section id="saveItnitialBox" class="hide">
+        <form id="submitInitials">
+            <h2 id="yourScore"></h2>
+            <label id="initials">Your initials:</label>
+            <input type="text" id="initialsBox" placeholder="Enter your initials"/>
+            <button id="saveInitialsBtn">Submit</button>
+        </form>
+    </section>
+
+    <!-- the highscore page, will display quiz takers scores and allows quiz takers to retake the quiz or clear the scores  -->
+    <section id="highscoresbox" class="highscoreBox hide">
+        <div id="highScores">
+            <h1>Scoreboard</h1>
+            <div id="scoreboard" class="scoreList"></div>
+            <div class="control">
+                <button id="retake">Retake</button>
+                <button id="clearBtn">Clear</button>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="questions.js"></script>
+</body>
+</html>
