@@ -1,7 +1,10 @@
 # Coding-Quiz
 
 Description
-This webpage is designed to be a quiz game about medical 
+This webpage is designed to be a quiz game about medical terminology. 
 
-![initialScreenshot](screenshot1.jpeg)
-![sampleQuestion](screenshot2.jpeg)
+live:
+ https://xuannga.github.io/Coding-Quiz/ 
+
+![initialScreenshot](screenshot1.jpg)
+![sampleQuestion](screenshot2.jpg)
