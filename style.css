@@ -1,0 +1,148 @@
+/* Normalize styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --primary-color: #ad4a4a;
+    --secondary-color: #ebd34c;
+    --tertiary-color: #423a3a;
+    --white-color: #ffffff;
+    --correct-color: #00ff00;
+  }
+  
+  body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5;
+    width: 60%;
+    margin: 0 auto;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .centered {
+    text-align: center;
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 25px 0;
+  }
+  
+  .score a,
+  .timeLeft {
+    font-size: 20px;
+  }
+  
+  .score a {
+    color: var(--secondary-color);
+    cursor: pointer;
+  }
+  
+  .score a:hover {
+    color: var(--tertiary-color);
+  }
+  
+  /* Start Quiz */
+  .initialBx {
+    text-align: center;
+  }
+  
+  h1 {
+    margin-bottom: 10px;
+  }
+  
+  h2 {
+    color: var(--tertiary-color);
+    border-top: 1px solid var(--tertiary-color);
+    margin: 20px 0;
+    font-style: italic;
+    text-align: center;
+  }
+  
+  /* Buttons */
+  .answerBtn {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+  }
+  
+  button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+    width: auto;
+    overflow: visible;
+    padding: 10px;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    font-size: large;
+    margin: 10px;
+    color: var(--white-color);
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: var(--secondary-color);
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  .btn.true {
+    background-color: var(--correct-color);
+  }
+  
+  .btn.false {
+    background-color: var(--tertiary-color);
+  }
+  
+  /* Wrapper for buttons */
+  .control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+  }
+  
+  /* Enter your initial */
+  input[type="text"] {
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid var(--tertiary-color);
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  /* Highscores Page */
+  .scoreboard {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  
+  .divName,
+  .divScore {
+    flex: 1 35%;
+    padding: 10px 0;
+    border: 1px solid var(--correct-color);
+  }
+  
+  /*** MEDIA QUERY FOR MOBILE PHONES AND SMALLER ***/
+  /* this will be applied on any screen smaller than 575px */
+  @media screen and (max-width: 575px) {
+    .answerBtn {
+      grid-template-columns: repeat(1, auto);
+      gap: 0;
+      margin: 0;
+    }
+  }
+  
